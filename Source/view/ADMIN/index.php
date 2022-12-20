@@ -18,11 +18,11 @@
         <h1>ĐĂNG NHẬP</h1>
       </div>
       <div id="form_dangki">
-        <form action="../PHP/index_admin_controller.php" method="post">
-          <input
-            type="text"
-            placeholder="Usename"
-            name="username"
+        <form action="./../../controller/UserController.php"  name="user_action" method="get">
+        <input
+            type="email"
+            placeholder="Email"
+            name="email"
             class="margin-top20"
           />
           <input    
@@ -31,12 +31,7 @@
             name="password"
             class="margin-top20"
           />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            class="margin-top20"
-          />
+        
         <small style="color:red">
             <?php
             session_start();

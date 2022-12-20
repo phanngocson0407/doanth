@@ -1,7 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+
+
+class MySQLUtils{
+  public function connectDB(){
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname="doan_thuchanh";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -10,5 +15,8 @@ try {
   echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
+}
+  }
+
 }
 ?>

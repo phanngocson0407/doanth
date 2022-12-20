@@ -148,8 +148,8 @@
         </button>
       </div>
       <div class="modal-body">
-      <form action="../PHP/customer_controller.php" method="post">
-        <input type="hidden" name="loaiquanly" value="create"/> 
+      <form action="./../../controller/UserController.php" name="user_create" method="post">
+
           <input
             type="text"
             placeholder="Tên khách hàng"
@@ -187,7 +187,7 @@
             id="email"
             class="margin-top20" />
             <br />
-            <button type="button" onclick="themuser()" class="btn btn-primary">Thêm</button>
+            <button type="submit"  class="btn btn-primary">Thêm</button>
             <button type="button" class="btn btn-primary" data-dismiss="modal" id="dong_themuser">Đóng</button>
         </form>
       </div>
