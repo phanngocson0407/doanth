@@ -112,11 +112,17 @@
                   </tr>
                   </thead>
                   <tbody id="user_content">
-                    <!-- <?php
-                    
+                   <?php
+                    include_once './../../until/MySQLUtil.php';
+                    $dbConnect = new MySQLUtils();
+                    $query = "SELECT userid, username, password, fullname, phone, status, email from user";
+                   $data = $dbConnect->getAllData($query);
+                    $dbConnect->disconnectDB();
+               
                     for($i = 0 ; $i< count($data);$i++){
+                    
                       echo '<tr>';
-                      echo '<td class="serial">'.$data[$i]["userid"].'</td>';
+                      echo '<td >'.$data[$i]["userid"].'</td>';
                       echo '<td>'.$data[$i]["email"].'</td>';
                       echo '<td>'.$data[$i]["phone"].'</td>';
                       echo '<td>'.$data[$i]["username"].'</td>';
@@ -126,7 +132,7 @@
                       echo'</tr>';
 
                     }
-                    ?> -->
+                    ?> 
                     
 
 

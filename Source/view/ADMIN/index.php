@@ -18,7 +18,8 @@
         <h1>ĐĂNG NHẬP</h1>
       </div>
       <div id="form_dangki">
-        <form action="./../../controller/UserController.php"  name="user_action" method="get">
+        <form action="./../../controller/UserController.php"   method="post">
+        <input type="hidden" name="user_action" value="user_login"/>
         <input
             type="email"
             placeholder="Email"
