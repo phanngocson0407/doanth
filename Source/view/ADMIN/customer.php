@@ -112,8 +112,8 @@
                   </tr>
                   </thead>
                   <tbody id="user_content">
-                    <!-- <?php
-                    
+                    <?php
+
                     for($i = 0 ; $i< count($data);$i++){
                       echo '<tr>';
                       echo '<td class="serial">'.$data[$i]["userid"].'</td>';
@@ -126,7 +126,7 @@
                       echo'</tr>';
 
                     }
-                    ?> -->
+                    ?> 
                     
 
 
